@@ -10,7 +10,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleEmptyCart, handleRemoveFromCart
 
     const EmptyCart = () => (
         <Typography variant="subtitle1">You have no items in your shopping start,
-            <Link to='/' className={classes.link}> start adding some! </Link>
+            <Link to='/shop' className={classes.link}> start adding some! </Link>
 
         </Typography>
     );

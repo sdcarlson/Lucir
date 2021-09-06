@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce'
-import { Home, Products, Navbar, Cart, Checkout, ProductDetailPage } from './Components';
+import { Home, Products, Navbar, Cart, Checkout, ProductDetailPage, About, Contact, ThankYou } from './Components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+
+// Products, About Us, Contact Us, Thank You
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -94,6 +96,15 @@ const App = () => {
                             products={products}
                             onAddToCart={handleAddToCart}
                         />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                    <Route exact path="/contact">
+                        <Contact />
+                    </Route>
+                    <Route exact path="/thankyou">
+                        <ThankYou />
                     </Route>
                 </Switch>
             </div>

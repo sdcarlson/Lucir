@@ -1,8 +1,11 @@
 import { makeStyles, fade } from '@material-ui/core/styles';
 
 const drawerWidth = 0;
-
+/*'#e3cdf7'*/
 export default makeStyles((theme) => ({
+    navbar: {
+        backgroundColor: '#e3cdf7'
+    },
     appBar: {
         boxShadow: 'none',
         borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
@@ -12,13 +15,13 @@ export default makeStyles((theme) => ({
         },
     },
     title: {
-        flexGrow: 1,
-        alignItems: 'center',
+        flexGrow: 0,
+        alignItems: 'left',
         display: 'flex',
         textDecoration: 'none',
     },
     image: {
-        marginRight: '10px',
+        marginRight: '5px',
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -29,9 +32,7 @@ export default makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
     },
-    logoCenter: {
-        justifyContent: 'center'
-    },
+
     search: {
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
@@ -69,3 +70,18 @@ export default makeStyles((theme) => ({
         },
     },
 }));
+/*
+.nav - links {
+    color: #fff;
+    display: flex;
+    align - items: center;
+    text - decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100 %;
+}
+
+  .nav - links: hover {
+    border - bottom: 4px solid #fff;
+    transition: all 0.2s ease - out;
+}
+*/
