@@ -22,16 +22,16 @@ const Navbar = ({ totalItems }) => {
                 <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
                     <img src={logo} alt="Lucir Store" height="50px" className={classes.image} />
                 </Typography>
-                <Typography component={Link} to="/shop" variant="h6" color="inherit" className='nav-links'>
+                <Typography  id = "navElement" component={Link} to="/shop" variant="h6" color="inherit" className='nav-links'>
                     Products
                 </Typography>
-                <Typography component={Link} to="/about" variant="h6" color="inherit" className='nav-links'>
+                <Typography id = "navElement" component={Link} to="/about" variant="h6" color="inherit" className='nav-links'>
                     About us
                 </Typography>
-                <Typography component={Link} to="/contact" variant="h6" color="inherit" className='nav-links'>
-                    Contact us
+                <Typography id = "navElement"  component={Link} to="/contact" variant="h6" color="inherit" className='nav-links'>
+                    Contact
                 </Typography>
-                <Typography component={Link} to="/thankyou" variant="h6" color="inherit" className='nav-links'>
+                <Typography id = "navElement"  component={Link} to="/thankyou" variant="h6" color="inherit" className='nav-links'>
                     Thank you
                 </Typography>
 

@@ -4,7 +4,7 @@ const drawerWidth = 0;
 /*'#e3cdf7'*/
 export default makeStyles((theme) => ({
     navbar: {
-        backgroundColor: '#e3cdf7'
+        backgroundColor: 'mintgreen'
     },
     appBar: {
         boxShadow: 'none',
