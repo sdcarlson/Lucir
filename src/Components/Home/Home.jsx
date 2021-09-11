@@ -14,10 +14,6 @@ const Home = () => {
         <div>
             {/*<div className={classes.toolbar} /> */}
             <VideoBackground />
-            <div className="text" style={{ background: '#fff' }}>
-                <img style={{ marginLeft: 300 }} src={image} alt="Link to store" />
-            </div>
-
         </div>
     )
 }
