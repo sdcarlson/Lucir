@@ -30,6 +30,7 @@ function ProductDetailPage({ products, onAddToCart }) {
             <div style={{ display: 'flex', justifyContent: 'center', fontFamily: "Helvetica Neue" }} >
                 <h1>{product.name}</h1>
             </div>
+            <p id="about">This is the launch of our limited production original body soap formulation. It is a delightfully aromated, naturally amber hued, sex-neutral body wash. Since we elected not to include artificial surfactant ingredients, it foams less than over-processed sulfate based body soaps, and applies instead as a cool cream-like lather. The natural oils will leave your skin feeling cleansed and moisturized.</p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button variant="contained" color="secondary" className={classes.button} endIcon={<ShoppingCart />} onClick={() => onAddToCart(product.id, 1)} >
                     Add to cart
