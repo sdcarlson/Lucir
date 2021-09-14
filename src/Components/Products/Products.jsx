@@ -3,16 +3,18 @@ import Grid from "@material-ui/core/Grid";
 import Product from './Product/Product';
 import useStyles from './styles';
 
-
+import video from '../../assets/project.mp4';
 
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
 
     return (
+        <div className='hero-container'>   
+        <video src={video} autoPlay loop muted />
         <div >
            
-            <main className={classes.content} style={{ backgroundColor: '#cde0f7' }}>
-            <h1>Handmade Liquid Bodysoap</h1>
+            <main className={classes.content} style={{ backgroundColor: 'transparent' }}>
+            <h1 id = "productTitle">Handmade Liquid Bodysoap</h1>
                 <div className={classes.toolbar} />
                 <Grid container justify="center" spacing={4}>
                     {products.map((product) => (
@@ -23,11 +25,11 @@ const Products = ({ products, onAddToCart }) => {
                 </Grid>
 
             </main>
-            <div>
-                <p id ="about"> Hand-crafted liquid bodywash.  Scented excellently with sensuous sandalwood rose fragrance. The most environmentally friendly soap feasible. WE have tirelessly toiled to develope the finest, most luxious, combination of ingredients. Vegan, Sulfate Free, Surfactant Free, Preservitive Free, Artificial Coloring Free, Minimal Carbon Emission, Perfectly Formulated. The Ultimate in Eco-Friendly beauty products. We plan to make this option even more environmentally friendly as we gain customers. Your purchase will provide for the development of a line of low-emission environmentally friendly cosmetics products.</p>
+            <div id = 'textBox'>
+                <p id ="description"> Hand-crafted liquid bodywash.  Scented excellently with sensuous sandalwood rose fragrance. The most environmentally friendly soap feasible. We have tirelessly toiled to develope the finest, most luxious, combination of ingredients. Vegan, Sulfate Free, Surfactant Free, Preservitive Free, Artificial Coloring Free, Minimal Carbon Emission, Perfectly Formulated. The Ultimate in Eco-Friendly beauty products. We plan to make this option even more environmentally friendly as we gain customers. Your purchase will provide for the development of a line of low-emission environmentally friendly cosmetics products.</p>
             </div>
         </div >
-
+        </div>
     );
 }
 

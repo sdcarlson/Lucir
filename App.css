@@ -11,7 +11,9 @@
     src: url(DinimalRegular-2MLK.ttf);
 }
 
-
+#productTitle{
+  margin-top: 80px;
+}
 
 body {
     background-color: #dbe8f8

@@ -8,6 +8,7 @@ const Product = ({ product, onAddToCart }) => {
     const classes = useStyles();
 
     return (
+        
         <Card className={classes.root}>
             <CardMedia component={Link} to={`/product/${product.id}`} className={classes.media} image={product.media.source} title={product.name} />
             <CardContent>

@@ -1,3 +1,130 @@
-body {
-    background-color: #cde0f7
+@font-face {
+    font-family: JenrivRegular;
+    src: url("/src/assets/Jenriv.otf");
+  }
+@font-face {
+    font-family: JenrivItalic;
+    src: url('/src/assets/JenrivItalic.otf');
 }
+@font-face{
+    font-family: D;
+    src: url('/src/assets/D.ttf');
+}
+
+body {
+    background-color: #dbe8f8
+}
+#intro{
+    margin-top: 10vh;
+    text-indent: 10vw;
+    font-family: Jenriv;
+    font-size: 2vh;
+    margin-inline: 11vw;
+    color:mintcream;
+  }
+  #description{
+    text-indent: 10vw;
+    font-family: Jenriv;
+    font-size: 2vh;
+    color:mintcream;
+  }
+
+  #textBox{
+    margin-top: 10vh;
+    width: 80vw;
+    border: 0.85vw inset maroon;
+    background:rgba(150, 100, 100, 0.699);
+    padding: 1vw;
+  }
+  #lucir
+  {
+    max-height: 50vh;
+    max-width: 50vw;
+    height: auto;
+    width: auto;
+    margin-bottom:1 0vh;
+  }
+  #welcomeTo
+  {
+    margin-top: 20vh;
+    margin-bottom:7vh;
+    font-style:italic;
+    font-size: 7vh;
+    color:mintcream;
+    font-family:D;
+  }
+  h1{
+      font-family: D;
+    margin-top: 40px;
+    text-align:center;
+    color:mintcream;
+    font-style:italic;
+}
+#thanksmessage{
+    text-indent:92px;
+    margin-inline: 90px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    text-align:center;
+    color:rgb(122, 122, 131);
+  }
+#companyphoto{
+    
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+     margin: 0 5px;
+  }
+
+  #subtext{
+            font-size: 14px;
+      margin-left: 21.2vw;
+      margin-right: auto;
+  }
+  #about{
+    text-indent: 90px;
+    font-size: 2vh;
+    margin-inline: 90px;
+    text-align: center;
+
+    font-family: Jenriv;
+    color:rgb(58, 29, 26);
+    background-color: '#cde0f7';
+    bottom: 20px;
+    right: 20px;
+
+  }
+  #bottomtext{
+    text-align: center;
+    color:rgb(58, 29, 26);
+    bottom:0px;
+  }
+  #aboutImages{
+    display: inline-block;
+  }
+  #palm1{
+    width: 13vw;
+    display: inline;
+    margin-bottom: 6vh;
+    margin-left: 8vw;
+    margin-right: 3vw;
+  }
+  #palm2{
+    width: 13vw;
+    display: inline;
+    margin-bottom: 6vh;
+    margin-left: 3vw;
+
+    margin-right: 4vw;
+    transform: scaleX(-1);
+  }
+  #contact{
+    font-size: 19px;
+    font-family:Jenriv;
+    text-align:center;
+    color:rgb(122, 122, 131);
+  }
+  #navElement{
+      font-family: Jenriv;
+  }
