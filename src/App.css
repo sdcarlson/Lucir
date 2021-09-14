@@ -11,6 +11,17 @@
     src: url('/src/assets/D.ttf');
 }
 
+.body-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
 body {
     background-color: #dbe8f8
 }
@@ -22,6 +33,11 @@ body {
     margin-inline: 11vw;
     color:mintcream;
   }
+
+#introD{
+  border-bottom:0.4vw, inset, maroon;
+}
+
   #description{
     text-indent: 10vw;
     font-family: Jenriv;
@@ -30,11 +46,26 @@ body {
   }
 
   #textBox{
-    margin-top: 10vh;
     width: 80vw;
     border: 0.85vw inset maroon;
     background:rgba(150, 100, 100, 0.699);
     padding: 1vw;
+  }
+  #titleBox{
+    background:rgba(150, 100, 100, 0.699);
+    width: 33vw;
+    margin-left: 33vw;
+    
+  }
+  #box{
+    background:rgba(150, 100, 100, 0.699);
+    width: 33vw;
+
+  }
+  #ContainerTitleBox{
+    margin-left: 23vw;
+    background:rgba(150, 100, 100, 0.699);
+    width: 33vw;
   }
   #lucir
   {
@@ -54,11 +85,14 @@ body {
     font-family:D;
   }
   h1{
-      font-family: D;
-    margin-top: 40px;
+    font-family: D;
+    margin-top: 5vh;
     text-align:center;
     color:mintcream;
     font-style:italic;
+}
+#about{
+  font-size: 20vh;
 }
 #thanksmessage{
     text-indent:92px;
@@ -82,48 +116,36 @@ body {
       margin-left: 21.2vw;
       margin-right: auto;
   }
-  #about{
-    text-indent: 90px;
-    font-size: 2vh;
-    margin-inline: 90px;
-    text-align: center;
-
-    font-family: Jenriv;
-    color:rgb(58, 29, 26);
-    background-color: '#cde0f7';
-    bottom: 20px;
-    right: 20px;
-
-  }
   #bottomtext{
     text-align: center;
     color:rgb(58, 29, 26);
     bottom:0px;
   }
   #aboutImages{
+    margin-top: 1vh;
     display: inline-block;
+    border: 1vw inline #555;
   }
   #palm1{
     width: 13vw;
     display: inline;
     margin-bottom: 6vh;
-    margin-left: 8vw;
-    margin-right: 3vw;
+    margin-right: 5vw;
   }
   #palm2{
     width: 13vw;
     display: inline;
     margin-bottom: 6vh;
-    margin-left: 3vw;
 
-    margin-right: 4vw;
     transform: scaleX(-1);
+    margin-left: 5vw;
+
   }
   #contact{
     font-size: 19px;
     font-family:Jenriv;
     text-align:center;
-    color:rgb(122, 122, 131);
+    color:rgb(0, 0, 0);
   }
   #navElement{
       font-family: Jenriv;

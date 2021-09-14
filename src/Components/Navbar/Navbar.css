@@ -12,3 +12,6 @@
     border-bottom: 4px solid rgb(233, 189, 189);
     transition: all 0.2s ease-out;
   }
+  h6{
+    font-size: 1vh;
+  }
