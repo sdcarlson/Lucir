@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Product from './Product/Product';
 import useStyles from './styles';
 
-import video from '../../assets/project.mp4';
+import video from '../../assets/palms.mp4';
 
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
