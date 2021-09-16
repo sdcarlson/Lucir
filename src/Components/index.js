@@ -7,3 +7,4 @@ export { default as ProductDetailPage } from './ProductDetailPage/ProductDetailP
 export { default as About } from './About/About'
 export { default as Contact } from './Contact/Contact'
 export { default as ThankYou } from './ThankYou/ThankYou'
+export { default as Footer } from './Footer/Footer';

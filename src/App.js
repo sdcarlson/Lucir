@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce'
-import { Home, Products, Navbar, Cart, Checkout, ProductDetailPage, About, Contact, ThankYou } from './Components';
+import { Home, Products, Navbar, Cart, Checkout, ProductDetailPage, About, Contact, ThankYou, Footer } from './Components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 // Products, About Us, Contact Us, Thank You
+
+
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -71,9 +73,11 @@ const App = () => {
                 <Switch>
                     <Route exact path="/">
                         <Home />
+                        <Footer isLongPage={true} />
                     </Route>
                     <Route exact path="/shop">
                         <Products products={products} onAddToCart={handleAddToCart} />
+                        <Footer isLongPage={true} />
                     </Route>
                     <Route exact path="/cart">
                         <Cart
@@ -82,6 +86,7 @@ const App = () => {
                             handleEmptyCart={handleEmptyCart}
                             handleRemoveFromCart={handleRemoveFromCart}
                         />
+                        <Footer isLongPage={false} />
                     </Route>
                     <Route exact path="/checkout">
                         <Checkout
@@ -96,15 +101,22 @@ const App = () => {
                             products={products}
                             onAddToCart={handleAddToCart}
                         />
+                        <Footer isLongPage={false} />
                     </Route>
                     <Route exact path="/about">
                         <About />
+                        <br />
+                        <br />
+                        <br />
+                        <Footer isLongPage={true} />
                     </Route>
                     <Route exact path="/contact">
                         <Contact />
+                        <Footer isLongPage={false} />
                     </Route>
                     <Route exact path="/thankyou">
                         <ThankYou />
+                        <Footer isLongPage={false} />
                     </Route>
                 </Switch>
             </div>

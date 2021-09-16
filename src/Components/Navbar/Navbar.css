@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
  .nav-links {
     color: rgb(3, 1, 1);
@@ -11,4 +12,22 @@
   .nav-links:hover {
     border-bottom: 4px solid rgb(233, 189, 189);
     transition: all 0.2s ease-out;
+  }
+  h6{
+    font-size: 1vh;
+=======
+ 
+ .nav-links {
+    color: rgb(3, 1, 1);
+    display: flex;
+    align-items: left;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid rgb(233, 189, 189);
+    transition: all 0.2s ease-out;
+>>>>>>> origin/main
   }

@@ -1,28 +1,80 @@
 @font-face {
     font-family: JenrivRegular;
-    src: url(JenrivRegular.otf);
+    src: url("/src/assets/Jenriv.otf");
   }
 @font-face {
     font-family: JenrivItalic;
-    src: url(JenrivItalic.otf);
+    src: url('/src/assets/JenrivItalic.otf');
 }
 @font-face{
-    font-family: Dinimal;
-    src: url(DinimalRegular-2MLK.ttf);
+    font-family: D;
+    src: url('/src/assets/D.ttf');
 }
 
-
+.body-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  object-fit: contain;
+}
 
 body {
     background-color: #dbe8f8
 }
 #intro{
     margin-top: 10vh;
-    text-indent: 90px;
+    text-indent: 10vw;
     font-family: Jenriv;
     font-size: 2vh;
-    margin-inline: 120px;
+    margin-inline: 11vw;
     color:mintcream;
+  }
+
+#introD{
+  border-bottom:0.4vw, inset, maroon;
+}
+
+  #description{
+    text-indent: 10vw;
+    font-family: Jenriv;
+    font-size: 2vh;
+    color:mintcream;
+  }
+
+  #spacer{
+    padding-bottom: 100px;
+  }
+
+  #textBox{
+    width: 80vw;
+    border: 0.85vw inset maroon;
+    background:rgba(150, 100, 100, 0.699);
+    padding: 1vw;
+  }
+  #freeTextBox{
+    width: 90vw;
+    margin-inline: 5vw;
+    border: 0.65vw inset maroon;
+    background:rgb(233, 189, 189);
+  }
+  #titleBox{
+    background:rgb(233, 189, 189);
+    width: 33vw;
+    margin-left: 33vw;
+  }
+  #box{
+    background:rgb(233, 189, 189);
+    width: 33vw;
+    margin-left: 33vw;
+    margin-top: 8vh;
+  }
+  #ContainerTitleBox{
+    margin-left: 23vw;
+    background:rgba(230, 125, 125, 0.479);
+    width: 33vw;
   }
   #lucir
   {
@@ -39,26 +91,27 @@ body {
     font-style:italic;
     font-size: 7vh;
     color:mintcream;
-    font-family:Dinimal;
+    font-family:D;
   }
   h1{
-      font-family: Jenriv;
-    margin-top: 40px;
+    font-family: D;
+    margin-top: 5vh;
     text-align:center;
-    color:rgb(91, 128, 250);
+    color:mintcream;
     font-style:italic;
 }
+#about{
+  font-size: 20vh;
+}
 #thanksmessage{
-    text-indent:92px;
-    margin-inline: 90px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 19px;
-    text-align:center;
-    color:rgb(122, 122, 131);
+  text-indent: 10vw;
+  font-family: Jenriv;
+  font-size: 2vh;
+  margin-inline: 11vw;
+  color:mintcream;
   }
 #companyphoto{
-    
-    height: 60vh;
+    height: 36vw;
     margin-left: auto;
     margin-right: auto;
     display: inline;
@@ -70,48 +123,32 @@ body {
       margin-left: 21.2vw;
       margin-right: auto;
   }
-  #about{
-    text-indent: 90px;
-    font-size: 2vh;
-    margin-inline: 90px;
-    text-align: center;
 
-    font-family: Jenriv;
-    color:rgb(58, 29, 26);
-    background-color: '#cde0f7';
-    bottom: 20px;
-    right: 20px;
-
-  }
-  #bottomtext{
-    text-align: center;
-    color:rgb(58, 29, 26);
-    bottom:0px;
-  }
   #aboutImages{
+    margin-top: 1vh;
     display: inline-block;
+    border: 1vw inline #555;
   }
   #palm1{
     width: 13vw;
     display: inline;
     margin-bottom: 6vh;
-    margin-left: 8vw;
-    margin-right: 3vw;
+    margin-right: 2vw;
   }
   #palm2{
     width: 13vw;
     display: inline;
     margin-bottom: 6vh;
-    margin-left: 3vw;
 
-    margin-right: 4vw;
     transform: scaleX(-1);
+    margin-left: 2vw;
+
   }
   #contact{
     font-size: 19px;
     font-family:Jenriv;
     text-align:center;
-    color:rgb(122, 122, 131);
+    color:rgb(0, 0, 0);
   }
   #navElement{
       font-family: Jenriv;
