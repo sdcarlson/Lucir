@@ -44,6 +44,10 @@ body {
     color:mintcream;
   }
 
+  #spacer{
+    padding-bottom: 100px;
+  }
+
   #textBox{
     width: 80vw;
     border: 0.85vw inset maroon;
@@ -65,7 +69,7 @@ body {
     background:rgb(233, 189, 189);
     width: 33vw;
     margin-left: 33vw;
-    margin-top: 20vh;
+    margin-top: 8vh;
   }
   #ContainerTitleBox{
     margin-left: 23vw;
@@ -119,11 +123,7 @@ body {
       margin-left: 21.2vw;
       margin-right: auto;
   }
-  #bottomtext{
-    text-align: center;
-    color:rgb(58, 29, 26);
-    bottom:0px;
-  }
+
   #aboutImages{
     margin-top: 1vh;
     display: inline-block;
