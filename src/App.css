@@ -54,6 +54,13 @@ body {
     background:rgba(150, 100, 100, 0.699);
     padding: 1vw;
   }
+
+  #textBox-mobile{
+    width: 80vw;
+    border: 0.85vw inset maroon;
+    background:rgba(6, 9, 204, 0.699);
+    padding: 1vw;
+  }
   #freeTextBox{
     width: 90vw;
     margin-inline: 5vw;
@@ -70,6 +77,13 @@ body {
     width: 33vw;
     margin-left: 33vw;
     margin-top: 8vh;
+  }
+
+  #box-mobile{
+    background:rgb(233, 189, 189);
+    width: 33vw;
+    margin-left: 33vw;
+    margin-top: 15vh;
   }
   #ContainerTitleBox{
     margin-left: 23vw;
@@ -118,8 +132,18 @@ body {
      margin: 0 5px;
   }
 
+#companyphoto-mobile{
+  position: absolute;
+  top: 250px;
+  align-items: center;
+  height: 70vw;
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
   #subtext{
-            font-size: 14px;
+      font-size: 14px;
       margin-left: 21.2vw;
       margin-right: auto;
   }
@@ -135,6 +159,14 @@ body {
     margin-bottom: 6vh;
     margin-right: 2vw;
   }
+
+  #palm1-mobile{
+    margin-top: 80vh;
+    width: 13vw;
+    display: inline;
+    margin-bottom: 6vh;
+    margin-right: 2vw;
+  }
   #palm2{
     width: 13vw;
     display: inline;
@@ -142,7 +174,15 @@ body {
 
     transform: scaleX(-1);
     margin-left: 2vw;
+  }
 
+  #palm2-mobile{
+    width: 13vw;
+    display: inline;
+    margin-bottom: 6vh;
+
+    transform: scaleX(-1);
+    margin-left: 2vw;
   }
   #contact{
     font-size: 19px;

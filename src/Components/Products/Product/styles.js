@@ -4,7 +4,7 @@ export default makeStyles(() => ({
     root: {
         // maxWidth: 345, original width style
         maxWidth: '100%',
-        backgroundColor: 'gray',
+        backgroundColor: 'rgba(150, 100, 100, 0.699)',
     },
     media: {
         height: 0,
