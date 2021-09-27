@@ -49,6 +49,7 @@ body {
   }
 
   #textBox{
+    margin-inline:auto;
     width: 80vw;
     border: 0.85vw inset maroon;
     background:rgba(150, 100, 100, 0.699);
@@ -120,8 +121,7 @@ body {
 
   #subtext{
             font-size: 14px;
-      margin-left: 21.2vw;
-      margin-right: auto;
+      text-align: center;
   }
 
   #aboutImages{
@@ -152,4 +152,12 @@ body {
   }
   #navElement{
       font-family: Jenriv;
+  }
+  #companyphoto-mobile
+  {
+    width: 100vw;
+  }
+  #longTop 
+  {
+      margin-top: 30vh;
   }

@@ -77,7 +77,7 @@ const App = () => {
                     </Route>
                     <Route exact path="/shop">
                         <Products products={products} onAddToCart={handleAddToCart} />
-                        <Footer isLongPage={true} />
+                         
                     </Route>
                     <Route exact path="/cart">
                         <Cart
@@ -86,7 +86,7 @@ const App = () => {
                             handleEmptyCart={handleEmptyCart}
                             handleRemoveFromCart={handleRemoveFromCart}
                         />
-                        <Footer isLongPage={false} />
+                        
                     </Route>
                     <Route exact path="/checkout">
                         <Checkout

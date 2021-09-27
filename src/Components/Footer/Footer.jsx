@@ -3,8 +3,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = ({ isLongPage }) => {
-
-    if (isLongPage) {
+    if (isLongPage ) {
         return (
             <div className="wrapper">
                 <section className="footer-longpage">
@@ -15,10 +14,13 @@ const Footer = ({ isLongPage }) => {
                     <section className="footer-info">
                         <section className="footer-info-left">
                             <section className="footer-info__name">
-                                lucirsoap@gmail.com
+                                lucirsoap
+                            </section>
+                            <section className="footer-info__name">
+                                @lucir.us
                             </section>
                             <section className="footer-info__returns">
-                                site design / logo © 2021 Lucir Inc
+                                Site design and Logo © 2021 Lucir Inc
                             </section>
                         </section>
                         <section className="footer-info-center">
@@ -55,7 +57,7 @@ const Footer = ({ isLongPage }) => {
                     <section className="footer-info">
                         <section className="footer-info-left">
                             <section className="footer-info__name">
-                                lucirsoap@gmail.com
+                                lucirsoap@lucir.us
                             </section>
                             <section className="footer-info__returns">
                                 site design / logo © 2021 Lucir Inc

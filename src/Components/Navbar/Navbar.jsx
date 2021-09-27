@@ -12,10 +12,68 @@ const Navbar = ({ totalItems }) => {
     const classes = useStyles();
     const location = useLocation();
 
-    const resolution = window.innerWidth;
-    const isMobile = resolution >= 320 && resolution <= 480;
+    let isMobile = ((window.screen.width) < 420);
+    let isSmallMobile = ((window.screen.width) < 320);
+    if(isSmallMobile)
+    {
+        return(
+        <AppBar position="fixed" className={classes.appBar} color="inherit">
+        <Toolbar className={classes.navbar} >
+            <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
+                <img src={logo} alt="Lucir Store" height="50px" className={classes.image} />
+            </Typography>
+            <Typography  id = "navElement" component={Link} to="/shop" variant="h6" color="inherit" className='nav-links'>
+                Products
+            </Typography>
+            <Typography id = "navElement" component={Link} to="/about" variant="h6" color="inherit" className='nav-links'>
+                About us
+            </Typography>
 
+            <div className={classes.grow} />
+            {location.pathname === '/' || location.pathname === '/shop' || location.pathname === '/about' || location.pathname === '/contact' || location.pathname === '/thankyou' || location.pathname === '/product/prod_G6kVw73bKKw2eD' || location.pathname === '/product/prod_O3bR5XBbz1wnzd' ? (
+                <div className={classes.button}>
+                    <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+                        <Badge badgeContent={totalItems} color="secondary">
+                            <ShoppingCart />
+                        </Badge>
+                    </IconButton>
+                </div>) : null}
+        </Toolbar>
+    </AppBar>
+        )
+    }
+    if(isMobile)
+    {
+        return(
+        <AppBar position="fixed" className={classes.appBar} color="inherit">
+        <Toolbar className={classes.navbar} >
+            <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
+                <img src={logo} alt="Lucir Store" height="50px" className={classes.image} />
+            </Typography>
+            <Typography  id = "navElement" component={Link} to="/shop" variant="h6" color="inherit" className='nav-links'>
+                Products
+            </Typography>
+            <Typography id = "navElement" component={Link} to="/about" variant="h6" color="inherit" className='nav-links'>
+                About us
+            </Typography>
+            <Typography id = "navElement"  component={Link} to="/thankyou" variant="h6" color="inherit" className='nav-links'>
+                Thank you
+            </Typography>
 
+            <div className={classes.grow} />
+            {location.pathname === '/' || location.pathname === '/shop' || location.pathname === '/about' || location.pathname === '/contact' || location.pathname === '/thankyou' || location.pathname === '/product/prod_G6kVw73bKKw2eD' || location.pathname === '/product/prod_O3bR5XBbz1wnzd' ? (
+                <div className={classes.button}>
+                    <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
+                        <Badge badgeContent={totalItems} color="secondary">
+                            <ShoppingCart />
+                        </Badge>
+                    </IconButton>
+                </div>) : null}
+        </Toolbar>
+    </AppBar>
+        )
+    }
+    else{
     return (
         <AppBar position="fixed" className={classes.appBar} color="inherit">
             <Toolbar className={classes.navbar} >
@@ -47,6 +105,7 @@ const Navbar = ({ totalItems }) => {
             </Toolbar>
         </AppBar>
     )
+                }
 }
 
 export default Navbar
