@@ -64,8 +64,7 @@ const App = () => {
         fetchCart();
     }, [])
 
-    console.log(products);
-    console.log(cart);
+
     return (
         <Router>
             <div>
@@ -77,7 +76,7 @@ const App = () => {
                     </Route>
                     <Route exact path="/shop">
                         <Products products={products} onAddToCart={handleAddToCart} />
-                         
+
                     </Route>
                     <Route exact path="/cart">
                         <Cart
@@ -86,7 +85,7 @@ const App = () => {
                             handleEmptyCart={handleEmptyCart}
                             handleRemoveFromCart={handleRemoveFromCart}
                         />
-                        
+
                     </Route>
                     <Route exact path="/checkout">
                         <Checkout
@@ -101,7 +100,7 @@ const App = () => {
                             products={products}
                             onAddToCart={handleAddToCart}
                         />
-                        <Footer isLongPage={false} />
+                        <Footer isLongPage={true} />
                     </Route>
                     <Route exact path="/about">
                         <About />
